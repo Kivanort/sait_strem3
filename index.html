@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт стрёмной</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .collage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            border: 2px solid #ccc;
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        .stats {
+            text-align: center;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .stat {
+            display: inline-block;
+            width: 150px;
+            padding: 15px;
+            background-color: #ffb6c1;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        /* Добавляем стили для раздела с клипом */
+        .clip-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 10px;
+            border: 5px solid #ffb6c1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+            background-color: #fff;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clip-video {
+            width: 90%;
+            height: auto;
+            border: none;
+        }
+        .collage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px; /* увеличенная высота */
+            border: 2px solid #ccc;
+            margin-bottom: 30px;
+        }
+        .collage img {
+            width: 100%; /* занимает всю ширину родителя */
+            height: auto; /* сохраняет пропорции */
+            object-fit: cover; /* обрезает изображение, сохраняя его в пределах контейнера */
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Привет от Иванчо!</h1>
+    
+    <!-- Коллаж -->
+    <div class="collage">
+        <img src="стрем2.jpg" alt="Коллаж">
+    </div>
+    
+<!-- Раздел с клипом -->
+<div class="clip-container">
+    <video class="clip-video" controls>
+        <source src="video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+</div>
+
+<style>
+    /* Общий контейнер для видео */
+    .clip-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 10px;
+        border: 5px solid #ffb6c1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Видео плеер */
+    .clip-video {
+        width: 90%;
+        height: auto;
+        border: none;
+    }
+</style>
+  
+    
+    <!-- Статистика -->
+    <div class="stats">
+        <div class="stat">
+            Просмотры за месяц:<br>
+            <span style="font-size: 32px;">12,456</span>
+        </div>
+        <div class="stat">
+            Количество стримов:<br>
+            <span style="font-size: 32px;">15</span>
+        </div>
+        <div class="stat">
+            Фолловеры:<br>
+            <span style="font-size: 32px;">82</span>
+        </div>
+        <div class="stat">
+            Среднее время просмотра:<br>
+            <span style="font-size: 32px;">70 минут</span>
+        </div>
+    </div>
+</body>
+<!-- Футер -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2025   Сайт стрёмной. Все права защищены.</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@stremmm?_t=ZS-8twWKAEwiQx&_r=1"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<style>
+    /* Общие стили для футера */
+.site-footer {
+    background-color: #f9f9f9; /* Цвет фона футера */
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Стилизация текста копирайта */
+.site-footer p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Контейнер для списка иконок соцсетей */
+.social-icons {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Элементы списка (иконки) */
+.social-icons li {
+    margin: 0 8px;
+}
+
+/* Ссылка на соцсети */
+.social-icons a {
+    display: inline-block;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* При наведении курсора на иконку она меняет цвет */
+.social-icons a:hover {
+    color: #007bff; /* Измените этот цвет на нужный вам */
+}
+
+/* Размеры иконок */
+.social-icons i {
+    font-size: 24px;
+}
+
+</style>
+</footer>
+
+<!-- Подключение шрифтов Font Awesome для иконок социальных сетей -->
+<script src="https://kit.fontawesome.com/your-font-awesome-kit-code.js" crossorigin="anonymous"></script>
+
+</html>
